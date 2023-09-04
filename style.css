@@ -1,26 +1,37 @@
 * {
-  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 :focus {
  /* TODO */
 }
 
 body {
-  margin: 0;
-  padding: 0;
+ 
   height: 100%;
+  background: linear-gradient(to right, #f5d927, #e66400);
+
 }
 
 input {
-  
+  background-color: rgba(245, 245, 245, 0.31);
+  border: none;
+  border-bottom: 2px solid rgb(255, 94, 0);
+  padding: 20px;
+  width: 380px;
+  font-size: 25px;
+  position: relative;
 }
 
 .search-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:vh;
+  padding:50vh;
+  
   
 }
 .search-container input,
@@ -28,25 +39,42 @@ input {
   /* TODO */
 }
 .search-container input {
- /* TODO */
+  
 }
 .search-container .suggestions {
-   /* TODO */
+  
+
 }
+
+
 
 ul {
   /* TODO */
 }
 ul.has-suggestions {
-  /* TODO */
+  background-color: rgba(245, 245, 245, 0.31);
+  width: 380px;
+  max-height: 300px;
+  overflow-y: scroll;
+  position: absolute;
 }
 ul li {
-  /* TODO */
+  list-style-type: none;
+  padding: 5px;
 }
 ul li:hover {
-  /* TODO */
+  background-color: #dd4422;
+  cursor: pointer;
 }
 
 input {
    /* TODO */
 }
+
+.suggestions.has-suggestions ul {
+  display: block;
+}
+
+li{
+}
+
