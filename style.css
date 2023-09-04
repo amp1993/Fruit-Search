@@ -7,15 +7,21 @@
 }
 
 body {
-  /* TODO */
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 input {
- /* TODO */
+  
 }
 
 .search-container {
- /* TODO */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:vh;
+  
 }
 .search-container input,
 .search-container .suggestions {
