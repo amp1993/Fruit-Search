@@ -29,15 +29,16 @@ function showSuggestions(results, inputVal) {
 	const ulElement = document.querySelector('ul');
 	ulElement.appendChild(liElement);
 	liElement.textContent = results;
+	ulElement.className = 'has-suggestions'
+
 
 	liElement.addEventListener('click', function(){
 		input.value = results;
-		suggestions.innerHTML = '';
+		suggestions.innerHTML = ''; 
 
 	});
 });
+
 }
+
   
-
-
-suggestions.addEventListener('click', useSuggestion);
