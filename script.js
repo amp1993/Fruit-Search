@@ -15,7 +15,7 @@ function search(str) {
 }
 
 function searchHandler(e) {
-	const inputEntered = input.value;
+	const inputEntered = input.value.toLowerCase();
 	const results = search(inputEntered);
 	showSuggestions(results, inputEntered);
 	
